@@ -1,2 +1,4 @@
+const config = require('./config')
 const { main } = require('./src/main')
-main().catch(err => console.error(err))
+
+main(config).catch(err => console.error(err))
